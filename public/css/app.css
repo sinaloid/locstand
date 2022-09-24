@@ -10903,3 +10903,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.tilte{
+  font-size: 2rem;
+}
+
+.b-raduis{
+  border-radius: 5px;
+}

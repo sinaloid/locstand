@@ -24,3 +24,23 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/ajoute_artisan', function () {
+    return view('ajoute_artisan');
+})->name('ajoute_artisan');
+
+Route::get('/liste_artisan', function () {
+    return view('liste_artisan');
+})->name('liste_artisan');
+
+Route::get('/ajoute_utilisateur', function () {
+    return view('ajoute_utilisateur');
+})->name('ajoute_utilisateur');
+
+Route::get('/modifier_utilisateur', function () {
+    return view('modifier_utilisateur');
+})->name('modifier_utilisateur');
+
+Route::get('/supprimer_utilisateur', function () {
+    return view('supprimer_utilisateur');
+})->name('supprimer_utilisateur');

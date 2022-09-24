@@ -44,3 +44,13 @@ Route::get('/modifier_utilisateur', function () {
 Route::get('/supprimer_utilisateur', function () {
     return view('supprimer_utilisateur');
 })->name('supprimer_utilisateur');
+
+Route::get('/ajouter_stand', function () {
+    return view('ajouter_stand');
+})->name('ajouter_stand');
+
+Route::get('/modifier_stand', function () {
+    return view('modifier_stand');
+})->name('modifier_stand');
+
+

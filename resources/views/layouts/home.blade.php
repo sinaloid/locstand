@@ -100,12 +100,12 @@
                                   </li>
       
                                   <li class="nav-item">
-                                      <a href="#" class="nav-link">
+                                    <a href="{{route('modifier_artisan')}}" class="nav-link">
                                           <p>Modifier un artisan </p>
                                       </a>
                                   </li>
                                   <li class="nav-item">
-                                      <a href="#" class="nav-link">
+                                    <a href="{{route('supprimer_artisan')}}" class="nav-link">
                                           <p>supprimer un artisan </p>
                                       </a>
                                   </li>
@@ -119,18 +119,18 @@
                               </a>
                               <ul class="nav nav-treeview">
                                   <li class="nav-item">
-                                      <a href="#" class="nav-link">
+                                    <a href="{{route('liste_stand')}}" class="nav-link">
                                           <p>Liste des stands</p>
                                       </a>
                                   </li>
                                   <li class="nav-item">
-                                      <a href="#" class="nav-link">
+                                      <a href="{{route('ajouter_stand')}}" class="nav-link">
                                           <p>Ajouter un stand</p>
                                       </a>
                                   </li>
       
                                   <li class="nav-item">
-                                      <a href="#" class="nav-link">
+                                      <a href="{{route('modifier_stand')}}" class="nav-link">
                                           <p>Modifier un stand </p>
                                       </a>
                                   </li>

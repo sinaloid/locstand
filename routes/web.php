@@ -53,4 +53,15 @@ Route::get('/modifier_stand', function () {
     return view('modifier_stand');
 })->name('modifier_stand');
 
+Route::get('/modifier_artisan', function () {
+    return view('modifier_artisan');
+})->name('modifier_artisan');
+
+Route::get('/supprimer_artisan', function () {
+    return view('supprimer_artisan');
+})->name('supprimer_artisan');
+
+Route::get('/liste_stand', function () {
+    return view('liste_stand');
+})->name('liste_stand');
 

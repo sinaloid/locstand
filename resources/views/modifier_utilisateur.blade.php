@@ -21,64 +21,17 @@
                         <label for="uname">Nom Prenom :</label>
                         <input type="text" class="form-control" id="uname" placeholder="Nom Prenom" name="uname"
                             required>
-
-
                     </div>
                     <div class="form-group">
-                        <label for="uname">Raison social :</label>
+                        <label for="uname">Direction :</label>
                         <input type="text" class="form-control" id="uname" placeholder="Raison social"
                             name="uname" required>
-
-
                     </div>
+
                     <div class="form-group">
-                        <label for="uname">Numero whatsapp :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                        <label for="uname">Fonction :</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Raison social"
                             name="uname" required>
-
-
-                    </div>
-                    <div class="form-group">
-                        <label for="uname">Pays :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
-                            name="uname" required>
-
-
-                    </div>
-                    <div class="form-group">
-                        <label for="uname">Ville :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
-                            name="uname" required>
-
-
-                    </div>
-                    <div class="form-group">
-                        <label for="uname">Domaine d'activité :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
-                            name="uname" required>
-
-
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Responsable de stand:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password"
-                            name="pswd" required>
-
-
-                    </div>
-                    <div class="form-group">
-                        <label for="uname">Accompagnateur 1 :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
-                            name="uname" required>
-
-
-                    </div>
-                    <div class="form-group">
-                        <label for="uname">Accompagnateur 2 :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
-                            name="uname" required>
-
-
                     </div>
                     <div class="col-12 d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary ">Modifier</button>

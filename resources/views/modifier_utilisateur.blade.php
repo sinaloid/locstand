@@ -18,10 +18,16 @@
                   </div>
                 <form action="/action_page.php" class="bg-white p-3 b-raduis">
                     <div class="form-group">
-                        <label for="uname">Nom Prenom :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Nom Prenom" name="uname"
+                        <label for="uname">Nom :</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Nom" name="uname"
                             required>
                     </div>
+                    <div class="form-group">
+                        <label for="uname">Prenom :</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Prenom" name="uname"
+                            required>
+                    </div>
+
                     <div class="form-group">
                         <label for="uname">Direction :</label>
                         <input type="text" class="form-control" id="uname" placeholder="Raison social"

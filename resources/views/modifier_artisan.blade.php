@@ -18,12 +18,19 @@
                   </div>
                 <form action="/action_page.php" class="bg-white p-3 b-raduis">
                     <div class="form-group">
-                        <label for="uname">Nom Prenom :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Nom Prenom" name="uname"
+                        <label for="uname">Nom :</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Nom" name="uname"
                             required>
 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="uname">Prenom :</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Prenom" name="uname"
+                            required>
 
                     </div>
+
                     <div class="form-group">
                         <label for="uname">Raison social :</label>
                         <input type="text" class="form-control" id="uname" placeholder="Raison social"
@@ -32,50 +39,50 @@
 
                     </div>
                     <div class="form-group">
-                        <label for="uname">Numero whatsapp :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                        <label for="uname">Contact :</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Contact"
                             name="uname" required>
 
 
                     </div>
                     <div class="form-group">
                         <label for="uname">Pays :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                        <input type="text" class="form-control" id="uname" placeholder="Pays"
                             name="uname" required>
 
 
                     </div>
                     <div class="form-group">
                         <label for="uname">Ville :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                        <input type="text" class="form-control" id="uname" placeholder="Ville"
                             name="uname" required>
 
 
                     </div>
                     <div class="form-group">
                         <label for="uname">Domaine d'activité :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                        <input type="text" class="form-control" id="uname" placeholder="Domaine d'activité"
                             name="uname" required>
 
 
                     </div>
                     <div class="form-group">
                         <label for="pwd">Responsable de stand:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                        <input type="password" class="form-control" id="pwd" placeholder="Responsable de stand"
                             name="pswd" required>
 
 
                     </div>
                     <div class="form-group">
                         <label for="uname">Accompagnateur 1 :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                        <input type="text" class="form-control" id="uname" placeholder="Accompagnateur 1"
                             name="uname" required>
 
 
                     </div>
                     <div class="form-group">
                         <label for="uname">Accompagnateur 2 :</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                        <input type="text" class="form-control" id="uname" placeholder="Accompagnateur 2"
                             name="uname" required>
 
 

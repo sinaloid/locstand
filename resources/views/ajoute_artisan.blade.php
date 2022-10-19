@@ -5,7 +5,7 @@
         <div class="row">
             <p class="text-center font-weight-bold tilte">Ajouter un artisan</p>
             <div class="col-12 col-md-8 mx-auto my-5">
-                <form action="/action_page.php" class="bg-white p-3 b-raduis">
+                <form method="POST" action="{{route('artisan')}}" class="bg-white p-3 b-raduis">
                     <div class="form-group">
                         <label for="uname">Nom :</label>
                         <input type="text" class="form-control" id="uname" placeholder="Entrez votre nom " name="uname"

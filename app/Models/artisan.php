@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class artisan extends Model
+class Artisan extends Model
 {
     protected $fillable = [
         "nom",
@@ -17,7 +17,8 @@ class artisan extends Model
         'pays',
         'responsable_stand',
         'accompagnateur1',
-        'accompagnateur2'
+        'accompagnateur2',
+        'email'
     ];
     use HasFactory;
 }

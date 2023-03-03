@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Artisan;
+use App\Models\Stand;
 
-class ArtisanControlleur extends Controller
+class StandController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +14,9 @@ class ArtisanControlleur extends Controller
      */
     public function index()
     {
-        //
-     $datas = Artisan::all();
-     return view('liste_artisan', compact('datas'));
-
-
+        
+     $datas = Stand::all();
+     return view('liste_stand', compact('datas'));
     }
 
     /**
@@ -39,8 +37,8 @@ class ArtisanControlleur extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
-        Artisan::create($request->all());
+        //dd($request->all());
+        Stand::create($request->all());
 
         return back();
     }

@@ -16,7 +16,7 @@ class CreateStandsTable extends Migration
         Schema::create('stands', function (Blueprint $table) {
             $table->id();
             $table->string("type_stand");
-            $table->integer("numero_stand");
+            $table->string("numero_stand");
             $table->timestamps();
         });
     }

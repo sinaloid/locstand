@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArtisanControlleur;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\StandController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,11 +25,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/artisan', ArtisanControlleur::class);
-
+Route::resource('/user', UserController::class);
+Route::resource('/stand', StandController::class);
 
 
 Route::get('/ajoute_artisan', function () {

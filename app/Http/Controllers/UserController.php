@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Artisan;
+use App\Models\User;
 
-class ArtisanControlleur extends Controller
+
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +16,9 @@ class ArtisanControlleur extends Controller
     public function index()
     {
         //
-     $datas = Artisan::all();
-     return view('liste_artisan', compact('datas'));
+        $datas = User::all();
 
-
+        return view("liste_utilisateur",compact("datas"));
     }
 
     /**
@@ -39,8 +39,9 @@ class ArtisanControlleur extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
-        Artisan::create($request->all());
+        //dd($request->all());
+
+        User::create($request->all());
 
         return back();
     }

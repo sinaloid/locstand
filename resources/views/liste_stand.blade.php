@@ -10,26 +10,23 @@
                     <th>Type de stand</th>
                     <th>Numéro de stand</th>
                     <th>Nom pavillon</th>
-
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Climatisé</td>
-                    <td>A3</td>
-                    <td>Rouge</td>
-                  </tr>
-                  <tr>
-                    <td>Standart</td>
-                    <td>B1</td>
-                    <td>Vert</td>
-                  </tr>
-                  <tr>
-                    <td>Standart</td>
-                    <td>C2</td>
-                    <td>Soleil lévant</td>
-                  </tr>
-
+                  @foreach ($datas as $data)
+                 <tr>
+                  <td>{{$data->type_stand}}</td>
+                  <td>{{$data->numero_stand}}</td>
+                  <td>
+                    <div class="btn-group">
+                      <button class="btn btn-infos mx-1">Voir</button>
+                      <button class="btn btn-warning mx-1">Editer</button>
+                      <button class="btn btn-danger mx-1">Supprimer</button>
+                    </div>
+                    
+                  </td>
+                </tr>
+                 @endforeach
                 </tbody>
               </table>
         </div>

@@ -57,7 +57,7 @@
                               </a>
                               <ul class="nav nav-treeview">
                                   <li class="nav-item">
-                                      <a href="#" class="nav-link">
+                                      <a href="{{route('user.index')}}" class="nav-link">
                                           <p>Liste des utilisateurs<span class="badge badge-info right">3</span></p>
                                       </a>
                                   </li>
@@ -89,7 +89,7 @@
                               </a>
                               <ul class="nav nav-treeview">
                                   <li class="nav-item">
-                                      <a href="{{route('liste_artisan')}}" class="nav-link">
+                                      <a href="{{route('artisan.index')}}" class="nav-link">
                                           <p>Liste des artisans</p>
                                       </a>
                                   </li>
@@ -119,7 +119,7 @@
                               </a>
                               <ul class="nav nav-treeview">
                                   <li class="nav-item">
-                                    <a href="{{route('liste_stand')}}" class="nav-link">
+                                    <a href="{{route('stand.index')}}" class="nav-link">
                                           <p>Liste des stands</p>
                                       </a>
                                   </li>

@@ -21,6 +21,7 @@ class CreateArtisansTable extends Migration
             $table->integer("contact");
             $table->string("domaine_activite");
             $table->string("ville");
+            $table->string("email");
             $table->string("pays");
             $table->string("responsable_stand");
             $table->string("accompagnateur1");

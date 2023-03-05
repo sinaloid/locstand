@@ -15,6 +15,8 @@
                     <th>domaine d'activité</th>
                     <th>Nationalité</th>
                     <th>Contact</th>
+                    <th>type_stand</th>
+                    <th>nom_pavillon</th>
                     <th>Action</th>
                   </tr>
                 </thead>
@@ -29,6 +31,8 @@
                   <td>{{$data->domaine_activite}}</td>
                   <td>{{$data->pays}}</td>
                   <td>{{$data->contact}}</td>
+                  <td>{{$data->type_stand}}</td>
+                  <td>{{$data->nom_pavillon}}</td>
                   <td>
                     <div class="btn-group">
                       <button class="btn btn-infos mx-1">Voir</button>

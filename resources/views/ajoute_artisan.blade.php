@@ -78,6 +78,30 @@
                             name="accompagnateur2" required>
                     </div>
 
+                    <div class="form-group">
+                        <label for="type_stand">Type de Stand :</label>
+                        <select class="form-select" id="type_stand" placeholder="Type de Stand"
+                        name="type_stand" required>
+                            <option value="">Selectionnez la fonction</option>
+                            <option value="climentiser">climentiser</option>
+                            <option value="ventiller">ventiller</option>
+                            <option value="simple">simple</option>
+                        </select>   
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nom_pavillon">Pavillon:</label>
+                        <select class="form-select" id="nom_pavillon" placeholder="nom_pavillon"
+                        name="nom_pavillon" required>
+                            <option value="">Selectionnez la fonction</option>
+                            <option value="pyramide">Pyramide</option>
+                            <option value="kilmadjaro">Kilmadjaro</option>
+                            <option value="soleil_levant">Soleil Levant</option>
+                        </select>
+
+                            
+                            
+                    </div>
 
                     <div class="col-12 d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary ">Ajouter</button>

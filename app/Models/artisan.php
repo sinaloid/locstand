@@ -18,7 +18,9 @@ class Artisan extends Model
         'responsable_stand',
         'accompagnateur1',
         'accompagnateur2',
-        'email'
+        'email',
+        'type_stand',
+        'nom_pavillon',
     ];
     use HasFactory;
 }

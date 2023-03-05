@@ -26,6 +26,8 @@ class CreateArtisansTable extends Migration
             $table->string("responsable_stand");
             $table->string("accompagnateur1");
             $table->string("accompagnateur2");
+            $table->string("type_stand");
+            $table->string("nom_pavillon");
             $table->timestamps();
         });
     }

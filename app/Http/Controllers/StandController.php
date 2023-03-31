@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Stand;
+use Illuminate\Support\Facades\Hash;
 
 class StandController extends Controller
 {
@@ -52,6 +53,8 @@ class StandController extends Controller
     public function show($id)
     {
         //
+        $data = Stand::find($id)->first();
+        return view('afficher_stand', compact('data'));
     }
 
     /**
@@ -62,7 +65,8 @@ class StandController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Stand::find($id)->first();
+        return view('editer_stand', compact('data'));
     }
 
     /**
@@ -74,7 +78,14 @@ class StandController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $stand = Stand::find($id);
+
+        $stand->type_stand = $request->type_stand;
+        $stand->numero_stand = $request->numero_stand;
+        $stand->nom_pavillon = $request->nom_pavillon;
+        $stand->password = Hash::make($request->type_stand);
+        $stand->save();
+        return redirect()->route('stand.index');
     }
 
     /**
@@ -86,5 +97,9 @@ class StandController extends Controller
     public function destroy($id)
     {
         //
+        $stand = Stand::find($id);
+
+        $stand->delete();
+        return redirect()->route('stand.index');
     }
 }

@@ -34,11 +34,14 @@
                   <td>{{$data->type_stand}}</td>
                   <td>{{$data->nom_pavillon}}</td>
                   <td>
-                    <div class="btn-group">
-                      <button class="btn btn-infos mx-1">Voir</button>
-                      <button class="btn btn-warning mx-1">Editer</button>
-                      <button class="btn btn-danger mx-1">Supprimer</button>
-                    </div>
+                    
+                      <a href="{{ route('artisan.show', $data->id) }}" class="btn btn-info">Voir</a>
+                      <a href="{{ route('artisan.edit', $data->id) }}" class="btn btn-warning">Editer</a>
+                      <form class="d-inline" action="{{ route('artisan.destroy', $data->id) }}" method="POST">
+                          @csrf
+                          @method("delete")
+                        <button type="submit" class="btn btn-danger">Supprimer</button>
+                      </form>
                     
                   </td>
                 </tr>

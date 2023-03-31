@@ -14,6 +14,7 @@
                 <div class="tilte">Email: <span class="fw-bold">{{$data->email}}</span></div>
             </div>
             <div class="col-12 col-md-4 mx-auto">
+            <div class="col-12 col-md-4 mx-auto">
                 <div class="tilte">Direction: <span class="fw-bold">{{$data->direction}}</span></div>
             </div>
             <div class="col-12 col-md-4 mx-auto">

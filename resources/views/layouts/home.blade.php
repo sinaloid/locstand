@@ -125,16 +125,7 @@
                                       </a>
                                   </li>
       
-                                  <li class="nav-item">
-                                      <a href="{{route('modifier_stand')}}" class="nav-link">
-                                          <p>Modifier un stand </p>
-                                      </a>
-                                  </li>
-                                  <li class="nav-item">
-                                      <a href="#" class="nav-link">
-                                          <p>supprimer un stand </p>
-                                      </a>
-                                  </li>
+                                  
                               </ul>
                           </li>
       

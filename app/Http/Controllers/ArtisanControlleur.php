@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Artisan;
+use Illuminate\Support\Facades\Hash;
 
 class ArtisanControlleur extends Controller
 {
@@ -54,6 +55,8 @@ class ArtisanControlleur extends Controller
     public function show($id)
     {
         //
+        $data = Artisan::find($id)->first();
+        return view('afficher_artisan', compact('data'));
     }
 
     /**
@@ -65,6 +68,8 @@ class ArtisanControlleur extends Controller
     public function edit($id)
     {
         //
+        $data = Artisan::find($id)->first();
+        return view('editer_artisan', compact('data'));
     }
 
     /**
@@ -77,7 +82,27 @@ class ArtisanControlleur extends Controller
     public function update(Request $request, $id)
     {
         //
+        $artisan = Artisan::find($id);
+
+        $artisan->nom = $request->nom;
+        $artisan->prenom = $request->prenom;
+        $artisan->raison_social = $request->raison_social;
+        $artisan->contact = $request->contact;
+        $artisan->domaine_activite = $request->domaine_activite;
+        $artisan->email = $request->email;
+        $artisan->ville = $request->ville;
+        $artisan->pays = $request->pays;
+        $artisan->responsable_stand = $request->responsable_stand;
+        $artisan->accompagnateur1 = $request->accompagnateur1;
+        $artisan->accompagnateur2 = $request->accompagnateur2;
+        $artisan->type_stand = $request->type_stand;
+        $artisan->nom_pavillon = $request->nom_pavillon;
+        $artisan->password = Hash::make($request->nom);
+        $artisan->save();
+        return redirect()->route('artisan.index');
+    
     }
+
 
     /**
      * Remove the specified resource from storage.
@@ -88,5 +113,10 @@ class ArtisanControlleur extends Controller
     public function destroy($id)
     {
         //
+        $artisan = Artisan::find($id);
+
+        $artisan->delete();
+        return redirect()->route('artisan.index');
     }
 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

@@ -42,7 +42,7 @@
                     <div class="form-group">
                         <label for="domaine_activite">Domaine d'activité :</label>
                         <input type="text" class="form-control" id="domaine_activite" placeholder="Entrez le nom de votre domaine d'activité "
-                        name="domaine_activite" value="{{$data->domaine_activité}}" required>
+                        name="domaine_activite" value="{{$data->domaine_activite}}" required>
                     </div>
 
                     <div class="form-group">
@@ -99,13 +99,6 @@
                             <option value="kilmadjaro">Kilmadjaro</option>
                             <option value="soleil_levant">Soleil Levant</option>
                         </select>
-
-                        <div class="form-group">
-                            <label for="password">Password :</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password"
-                                name="password" required>
-                        </div>
-                            
                     </div>
 
                     <div class="col-12 d-flex justify-content-center">

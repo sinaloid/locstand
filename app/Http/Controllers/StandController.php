@@ -53,7 +53,7 @@ class StandController extends Controller
     public function show($id)
     {
         //
-        $data = Stand::find($id)->first();
+        $data = Stand::where("id",$id)->first();
         return view('afficher_stand', compact('data'));
     }
 
@@ -65,7 +65,7 @@ class StandController extends Controller
      */
     public function edit($id)
     {
-        $data = Stand::find($id)->first();
+        $data = Stand::where("id",$id)->first();
         return view('editer_stand', compact('data'));
     }
 
@@ -82,8 +82,6 @@ class StandController extends Controller
 
         $stand->type_stand = $request->type_stand;
         $stand->numero_stand = $request->numero_stand;
-        $stand->nom_pavillon = $request->nom_pavillon;
-        $stand->password = Hash::make($request->type_stand);
         $stand->save();
         return redirect()->route('stand.index');
     }

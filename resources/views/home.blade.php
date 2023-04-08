@@ -9,7 +9,15 @@
                 <!-- small box -->
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h3>150</h3>
+                        <h3>@php
+                            $users = App\Models\Artisan::all();
+                            $i = 0;
+                            foreach ($users as $key => $value) {
+                              $i++;
+                            }
+
+                            echo $i;
+                        @endphp</h3>
                         <p>Artisans</p>
                     </div>
                     <div class="icon"><i class="ion ion-hammer"></i></div>
@@ -30,7 +38,15 @@
                 <!-- small box -->
                 <div class="small-box bg-warning">
                     <div class="inner">
-                        <h3>3 </h3>
+                        <h3>@php
+                            $users = App\Models\User::all();
+                            $i = 0;
+                            foreach ($users as $key => $value) {
+                              $i++;
+                            }
+
+                            echo $i;
+                        @endphp</h3>
                         <p>Utilisateur</p>
                     </div>
                     <div class="icon"><i class="ion ion-person-add"></i></div>

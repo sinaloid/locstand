@@ -3,20 +3,20 @@
 @section('content')
     <div class="container-fluid">
         <p class="text-center font-weight-bold tilte">Liste artisans</p>
-        <div class="col-12 col-md-10 mx-auto my-5">
+        <div class="col-12 col-md-12 mx-auto my-5">
             <table class="table table-striped">
                 <thead>
                   <tr>
                     <th>Nom</th>
                     <th>Prenom</th>
                     <th>Raison social</th>
-                    <th>Responsable stand</th>
+                    <th>Responsable</th>
                     <th>Email</th>
                     <th>domaine d'activité</th>
                     <th>Nationalité</th>
                     <th>Contact</th>
-                    <th>type_stand</th>
-                    <th>nom_pavillon</th>
+                    <th>stand</th>
+                    <th>pavillon</th>
                     <th>Action</th>
                   </tr>
                 </thead>

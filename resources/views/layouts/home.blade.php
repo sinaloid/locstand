@@ -86,23 +86,20 @@
                               <ul class="nav nav-treeview">
                                   <li class="nav-item">
                                       <a href="{{route('artisan.index')}}" class="nav-link">
-                                          <p>Liste des artisans</p>
-                                      </a>
+                                        <p>Liste des artisans<span class="badge badge-info right">@php
+                                            $users = App\Models\Artisan::all();
+                                            $i = 0;
+                                            foreach ($users as $key => $value) {
+                                              $i++;
+                                            }
+
+                                            echo $i;
+                                        @endphp</span></p>
+                                    </a>
                                   </li>
                                   <li class="nav-item">
                                       <a href="{{route('ajoute_artisan')}}" class="nav-link">
                                           <p>Ajouter un artisan</p>
-                                      </a>
-                                  </li>
-      
-                                  <li class="nav-item">
-                                    <a href="{{route('modifier_artisan')}}" class="nav-link">
-                                          <p>Modifier un artisan </p>
-                                      </a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a href="{{route('supprimer_artisan')}}" class="nav-link">
-                                          <p>supprimer un artisan </p>
                                       </a>
                                   </li>
                               </ul>
@@ -115,9 +112,17 @@
                               </a>
                               <ul class="nav nav-treeview">
                                   <li class="nav-item">
-                                    <a href="{{route('stand.index')}}" class="nav-link">
-                                          <p>Liste des stands</p>
-                                      </a>
+                                      <a href="{{route('stand.index')}}" class="nav-link">
+                                        <p>Liste des stands<span class="badge badge-info right">@php
+                                            $users = App\Models\Artisan::all();
+                                            $i = 0;
+                                            foreach ($users as $key => $value) {
+                                              $i++;
+                                            }
+
+                                            echo $i;
+                                        @endphp</span></p>
+                                    </a>
                                   </li>
                                   <li class="nav-item">
                                       <a href="{{route('ajouter_stand')}}" class="nav-link">

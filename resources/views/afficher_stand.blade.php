@@ -8,7 +8,7 @@
                 <div class="tilte">type_stand: <span class="fw-bold">{{$data->type_stand}}</span></div>
             </div>
             <div class="col-12 col-md-4 mx-auto">
-                <div class="tilte">numero_stand: <span class="fw-bold">{{$data->type_stand}}</span></div>
+                <div class="tilte">numero_stand: <span class="fw-bold">{{$data->numero_stand}}</span></div>
             </div>
         </div>
     </div>

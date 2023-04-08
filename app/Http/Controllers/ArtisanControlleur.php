@@ -97,7 +97,6 @@ class ArtisanControlleur extends Controller
         $artisan->accompagnateur2 = $request->accompagnateur2;
         $artisan->type_stand = $request->type_stand;
         $artisan->nom_pavillon = $request->nom_pavillon;
-        $artisan->password = Hash::make($request->nom);
         $artisan->save();
         return redirect()->route('artisan.index');
     

@@ -10,6 +10,7 @@
                     <th>Type de stand</th>
                     <th>Numéro de stand</th>
                     <th>Nom pavillon</th>
+                    <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -17,6 +18,7 @@
                  <tr>
                   <td>{{$data->type_stand}}</td>
                   <td>{{$data->numero_stand}}</td>
+                  <td>{{$data->pavillon}}</td>
                   <td>
 
                       <a href="{{ route('stand.show', $data->id) }}" class="btn btn-info">Voir</a>

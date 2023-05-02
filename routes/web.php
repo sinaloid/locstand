@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArtisanControlleur;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StandController;
+use App\Http\Controllers\LocationReservationController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -29,6 +30,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('/artisan', ArtisanControlleur::class);
 Route::resource('/user', UserController::class);
 Route::resource('/stand', StandController::class);
+Route::resource('/location_reservation', LocationReservationController::class);
 
 
 Route::get('/ajoute_artisan', function () {
@@ -71,3 +73,12 @@ Route::get('/liste_stand', function () {
     return view('liste_stand');
 })->name('liste_stand');
 
+Route::get('/location_reservation',function () {
+
+    $datas = [];
+    return view('location_reservation', compact('datas'));
+})->name('location_reservation');
+
+Route::get('/faire_location_reservation',function () {
+    return view('faire_location_reservation');
+})->name('faire_location_reservation');

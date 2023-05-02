@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Stand;
-use Illuminate\Support\Facades\Hash;
+use App\Models\Artisan;
+use App\Models\LocationReservation;
 
-class StandController extends Controller
+class LocationReservationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +17,8 @@ class StandController extends Controller
     public function index()
     {
         
-     $datas = Stand::all();
-     return view('liste_stand', compact('datas'));
+     $datas = LocationReservation::all();
+     return view('location_reservation', compact('datas'));
     }
 
     /**
@@ -39,7 +40,7 @@ class StandController extends Controller
     public function store(Request $request)
     {
         //dd($request->all());
-        Stand::create($request->all());
+        LocationReservation::create($request->all());
 
         return back();
     }
@@ -53,7 +54,7 @@ class StandController extends Controller
     public function show($id)
     {
         //
-        $data = Stand::where("id",$id)->first();
+        $data = LocationReservation::where("id",$id)->first();
         return view('afficher_stand', compact('data'));
     }
 
@@ -65,7 +66,7 @@ class StandController extends Controller
      */
     public function edit($id)
     {
-        $data = Stand::where("id",$id)->first();
+        $data = LocationReservation::where("id",$id)->first();
         return view('editer_stand', compact('data'));
     }
 
@@ -78,12 +79,11 @@ class StandController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $stand = Stand::find($id);
+        $locreserv = LocationReservation::find($id);
 
-        $stand->type_stand = $request->type_stand;
-        $stand->numero_stand = $request->numero_stand;
-        $stand->pavillon = $request->pavillon;
-        $stand->save();
+        $locreserv->type_stand = $request->type_stand;
+        $locreserv->numero_stand = $request->numero_stand;
+        $locreserv->save();
         return redirect()->route('stand.index');
     }
 
@@ -96,7 +96,7 @@ class StandController extends Controller
     public function destroy($id)
     {
         //
-        $stand = Stand::find($id);
+        $stand = LocationReservation::find($id);
 
         $stand->delete();
         return redirect()->route('stand.index');

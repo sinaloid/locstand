@@ -139,11 +139,27 @@
       
                           <li class="nav-item has-treeview"><a href="#" class="nav-link"><i
                                       class="nav-icon fas fa-circle"></i>
-                                  <p>Liste des pavillons <span class="badge badge-info right">5</span> </p>
+                                  <p>Location/Réservation <span class="badge badge-info right">5</span> </p>
                               </a>
                               <ul class="nav nav-treeview">
-      
-      
+                                <li class="nav-item">
+                                    <a href="{{route('location_reservation')}}" class="nav-link">
+                                      <p>Liste<span class="badge badge-info right">@php
+                                          $users = App\Models\Artisan::all();
+                                          $i = 0;
+                                          foreach ($users as $key => $value) {
+                                            $i++;
+                                          }
+
+                                          echo $i;
+                                      @endphp</span></p>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('faire_location_reservation')}}" class="nav-link">
+                                        <p>Faire une L/R</p>
+                                    </a>
+                                </li>
                               </ul>
                           </li>
       

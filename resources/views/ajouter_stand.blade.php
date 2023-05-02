@@ -24,14 +24,14 @@
                         <label for="numero_stand">Numéro de stand :</label>
                         <input type="text" class="form-control" id="numero_stand" placeholder="Numéro de stand"
                             name="numero_stand" required>
-
-
-
-
+                    </div>
+                    <div class="form-group">
+                        <label for="pavillon">Pavillon :</label>
+                        <input type="text" class="form-control" id="pavillon" placeholder="Nom du pavillon"
+                            name="pavillon" required>
                     </div>
                     <div class="col-12 d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary ">Ajouter</button>
-
                     </div>
                 </form>
             </div>

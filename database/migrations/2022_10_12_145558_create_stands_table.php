@@ -17,6 +17,7 @@ class CreateStandsTable extends Migration
             $table->id();
             $table->string("type_stand");
             $table->string("numero_stand");
+            $table->string("pavillon");
             $table->timestamps();
         });
     }
